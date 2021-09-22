@@ -10,7 +10,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearLoginStatus } from "./components/redux-store/userSlice";
 import React, { useEffect, Suspense } from "react";
-// import { ParallaxProvider } from "react-scroll-parallax";
+
 function App() {
   // lazy loading of components
   let UserRegister = React.lazy(() =>
