@@ -1,0 +1,542 @@
+body {
+  margin: 0;
+  font-family: "Kaisei HarunoUmi", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* nav bar styles */
+.menu li {
+  font-weight: bold;
+}
+.menu li:hover {
+  background-color: rgba(149, 219, 223, 0.582);
+  color: white;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.menu li button {
+  font-weight: bold;
+}
+.menu li button:hover {
+  background-color: rgba(149, 219, 223, 0.582);
+  color: white;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+/* icon style */
+.BonVoyage {
+  color: rgb(27, 151, 235);
+  font-weight: bold;
+}
+/*  */
+.prasanna {
+  width: 50% !important;
+}
+
+/* Heading */
+.headings {
+  color: rgb(108, 197, 156);
+}
+
+/* Dropdown for flightpage */
+.drpdown {
+  border: 0;
+  background-color: transparent;
+  box-shadow: none !important;
+  /* background: none; */
+}
+/* .navbar-brand {
+  color: brown;
+  font-weight: bold;
+} */
+
+/* background for Register Page */
+.background {
+  background-color: #d0f2f2;
+  padding-bottom: 1050px;
+  position: fixed;
+}
+
+/* Register Form  */
+.register {
+  background-color: white;
+  margin-top: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-radius: 10px;
+}
+
+/* register page animation */
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.card {
+  border-radius: 20px;
+}
+/* hotel Register Form Jump */
+/* .jump {
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* Button Styles */
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5bc0de;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+s
+
+/* icons */
+.icons {
+  position: relative;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: 0.5s;
+}
+
+.icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.icons:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
+
+.thankyouimg {
+  display: flex;
+  justify-content: center;
+  /* text-align: center;
+  display: block; */
+}
+
+/* Footer */
+.footer {
+  background-color: #fff7f7;
+}
+/* Footer heading */
+.footer-heading {
+  font-size: 20px;
+}
+/* footer para */
+.footer-para {
+  font-size: 10px;
+  text-align: justify;
+}
+/* faq-style */
+.faq-heading {
+  font-size: 15px;
+}
+
+.call {
+  display: inline;
+}
+
+.coronainstructions {
+  font-size: x-small;
+}
+
+.safeinstructions {
+  font-size: smaller;
+}
+
+.pol {
+  background-color: #eee;
+}
+
+.policies li {
+  font-size: 12px;
+  list-style: circle;
+}
+/* search button on image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.imgcard:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mybtn {
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgb(129, 127, 127);
+  border: none;
+}
+
+.mybutton {
+  border-radius: 50px;
+  padding: 20px;
+  background-color: rgb(204, 57, 57);
+  border: none;
+}
+
+/* modal image gallery */
+.MainImgModalcontainer {
+  margin: auto;
+  width: 100%;
+  min-width: 540px;
+}
+
+.MainImgModalcontainer .selected {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  /* border: 4px solid blue; */
+}
+
+.MainImgModalcontainer .imglistModal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+}
+.MainImgModalcontainer .imglistModal img {
+  width: 100px;
+  height: 100px;
+  margin: 5px 5px;
+}
+
+/* hotel description */
+.hoteldesp {
+  font-size: smaller;
+  text-align: initial;
+}
+
+/* admin view cards */
+.face1 {
+  z-index: 1;
+  transform: translateY(100px);
+}
+.face1:hover {
+  transform: translateY(0);
+}
+.face2 {
+  transform: translateY(-100px);
+}
+.face2:hover {
+  transform: translateY(0);
+}
+
+/* Home-CSS */
+/* .homebackground {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.pexels.com/photos/627823/pexels-photo-627823.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.runway {
+  height: 150px;
+  width: 100%;
+  background-image: url(https://res.cloudinary.com/dv29qwv3v/image/upload/v1631541515/bonvoyage%20images/road_p8qbv3.jpg);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.airplane {
+  width: 500px;
+  position: absolute;
+  bottom: 150px;
+  right: -200px;
+  animation: plan 4s linear infinite;
+}
+
+@keyframes plan {
+  0% {
+    transform: translateX(0px) translateY(0px) rotate(0deg);
+  }
+  40% {
+    transform: translateX(-500px) translateY(0px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-1500px) translateY(-200px) rotate(20deg);
+  }
+} */
+
+#fileInput {
+  display: none;
+}
+#icon {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+/* hotel cancelation policy */
+.top-heading {
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    rgba(85, 136, 231, 0.932),
+    rgba(131, 53, 219, 0.87)
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: large;
+}
+.policy-heading {
+  font-size: 20px;
+}
+.policy-para {
+  font-size: 15px;
+}
+
+/* Cart page */
+.smalltext {
+  font-size: xx-small;
+}
+.popup {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* HOME CSS */
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #094b65, transparent);
+  z-index: 10;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section #text {
+  position: absolute;
+  color: #094b65;
+  font-size: 10vw;
+  text-align: center;
+  line-height: 0.55em;
+  font-family: "Rancho", cursive;
+  transform: translateY(-50%);
+}
+section #text span {
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  background: #fff;
+  color: #094b65;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  transform: translateY(100px);
+}
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #094b65;
+}
+.sec h2 {
+  font-size: 3.5em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.sec p {
+  font-size: 1em;
+  color: #fff;
+}
